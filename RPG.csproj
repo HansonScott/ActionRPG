@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AB400350-3CB5-4D1A-96E5-891FAD737679}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RPG</RootNamespace>
+    <AssemblyName>RPG</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ActionStates.cs" />
+    <Compile Include="ActionTicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Actor.cs" />
+    <Compile Include="ArtificialIntelligence.cs" />
+    <Compile Include="ActorAttackedArgs.cs" />
+    <Compile Include="EventDamageArgs.cs" />
+    <Compile Include="FormGameOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGameOptions.Designer.cs">
+      <DependentUpon>FormGameOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormItemDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormItemDetails.Designer.cs">
+      <DependentUpon>FormItemDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLevelUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLevelUp.Designer.cs">
+      <DependentUpon>FormLevelUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLoadGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLoadGame.Designer.cs">
+      <DependentUpon>FormLoadGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNewGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNewGame.Designer.cs">
+      <DependentUpon>FormNewGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUsePremade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUsePremade.Designer.cs">
+      <DependentUpon>FormUsePremade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game.Designer.cs">
+      <DependentUpon>Game.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComboBoxUtil.cs" />
+    <Compile Include="FormAttribute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAttribute.Designer.cs">
+      <DependentUpon>FormAttribute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCharacterBasics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCharacterBasics.Designer.cs">
+      <DependentUpon>FormCharacterBasics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWelcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWelcome.Designer.cs">
+      <DependentUpon>FormWelcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory.cs" />
+    <Compile Include="PanelAction.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PanelActionToolbar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PlayerCharacter.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Projectile.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormGameOptions.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormGameOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormItemDetails.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormItemDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLevelUp.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormLevelUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLoadGame.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormLoadGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNewGame.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormNewGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUsePremade.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormUsePremade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Game.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAttribute.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormAttribute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCharacterBasics.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormCharacterBasics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWelcome.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormWelcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelActionToolbar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PanelActionToolbar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Session.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Session.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Res.cs" />
+    <Compile Include="RPGAction.cs" />
+    <Compile Include="RPGAnimation.cs" />
+    <Compile Include="RPGArea.cs" />
+    <Compile Include="RPGArmor.cs" />
+    <Compile Include="RPGCalc.cs" />
+    <Compile Include="RPGDamage.cs" />
+    <Compile Include="RPGDraw.cs" />
+    <Compile Include="RPGDrop.cs" />
+    <Compile Include="RPGEffect.cs" />
+    <Compile Include="RPGItem.cs" />
+    <Compile Include="RPGObject.cs" />
+    <Compile Include="RPGPotion.cs" />
+    <Compile Include="RPGSpell.cs" />
+    <Compile Include="RPGSpellBook.cs" />
+    <Compile Include="RPGWeapon.cs" />
+    <Compile Include="Session.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Session.Designer.cs">
+      <DependentUpon>Session.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabPageAction.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TabPageCharacterInfo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TabPageInventory.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TabPageMagic.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TabPageMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,18 @@
+Game Mechanics:
+- AI - if off, then they don't respond.  If on, they all attack each other. 
+	need to establish a 'neutral' AI
+	this is because a randomly generated actor has a random alignment.  
+	If alignment set to evil, they don't attach each other.
+- Ranged weapon firing 
+	when firing from out of range, need to set the target location to be just within range, 
+	not all the way to the target.
+- apply speed effect to weapon delay
+- add obstacles
+	- pathing around obstacle
+	- apply LOS restrictions to ranged and thrown weapons
+	
+UI:
+- on click, create animation at point to confirm click
+	- X for moving
+	- crossed swords for attack
+	- magic-something for spell target, etc.
